@@ -1,6 +1,7 @@
 clear
-tid =  3185;
-a = dlmread(sprintf('T_x_y_%06d.dat', tid));
+tid =  0;
+it=0;
+a = dlmread(sprintf('T_x_y_%06d_%04d.dat', it,tid));
 
 n = sqrt(size(a,1));
 x = a(1:n:n^2,1);
